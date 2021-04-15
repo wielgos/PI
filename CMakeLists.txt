@@ -23,3 +23,7 @@ add_executable(week3.3 week3/3.c)
 add_executable(week4.1 week4/1.c)
 add_executable(week4.2 week4/2.c)
 add_executable(week4.3 week4/3.c)
+
+add_executable(week5.1 week5/1.c)
+add_executable(week5.2 week5/2.c)
+add_executable(week5.3 week5/3.c)
