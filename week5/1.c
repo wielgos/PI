@@ -14,9 +14,9 @@ int main() {
 //                 0, 0, 0, 0, 1,
 //                 1, 0, 0, 0, 0,
 //                 0, 1, 0, 0, 0};
-    for (int i = 0; i<n;i++){
-        for (int j =0;  j<n; j++)
-            scanf("%d",&T[get_index(i,j,n)]);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++)
+            scanf("%d", &T[get_index(i, j, n)]);
     }
     int maxP = 0;
     for (int i = 0; i < n; i++) {
@@ -67,8 +67,7 @@ int main() {
                         for (int jh = l; jh <= j2; jh++) {
                             if (T[get_index(ih, jh, n)] != 1) {
                                 counter += 1;
-                            }
-                            else {
+                            } else {
                                 counter = -1;
                                 found_1 = 1;
                                 break;
@@ -78,13 +77,13 @@ int main() {
                             break;
                         }
                     }
-                    if (counter > maxP){
+                    if (counter > maxP) {
                         maxP = counter;
                     }
                 }
             }
-            if (maxP == n*n){
-                printf("%d",maxP);
+            if (maxP == n * n) {
+                printf("%d", maxP);
                 free(T);
                 return 0;
             }
@@ -92,7 +91,7 @@ int main() {
         }
 
     }
-    printf("%d",maxP);
+    printf("%d", maxP);
     free(T);
     return 0;
 }
