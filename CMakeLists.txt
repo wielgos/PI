@@ -35,3 +35,8 @@ add_executable(week6.tri week6/tri.c)
 add_executable(week7.bin week7/bin.c)
 add_executable(week7.seg week7/seg.c)
 add_executable(week7.stamp week7/stamp.c)
+
+add_executable(week8.last week8/last.c)
+add_executable(week8.last2 week8/last2.c)
+add_executable(week8.odd week8/odd.c)
+add_executable(week8.seq week8/seq.c)
