@@ -15,15 +15,15 @@ unsigned long long get_sum(unsigned long long number) {
 int main() {
     unsigned long long S;
     scanf("%llu", &S);
-    if (S == 0){
-        printf("0");
+    if (S == 0 || S == 1){
+        printf("%llu", S);
         return 0;
     }
     else if (S == ULLONG_MAX){
         printf("-1");
         return 0;
     }
-    unsigned long long bottom = S - S / 10 - 100;
+    unsigned long long bottom = S - S / 10 - 2;
     unsigned long long i;
     for (i = bottom; i < ULLONG_MAX; i++) {
         unsigned long long test = get_sum(i);
