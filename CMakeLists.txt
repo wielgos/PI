@@ -40,3 +40,7 @@ add_executable(week8.last week8/last.c)
 add_executable(week8.last2 week8/last2.c)
 add_executable(week8.odd week8/odd.c)
 add_executable(week8.seq week8/seq.c)
+
+add_executable(week9.ring week9/ring.c)
+add_executable(week9.semi week9/semi.c)
+add_executable(week9.sol week9/sol.c)
