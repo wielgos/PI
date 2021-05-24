@@ -44,3 +44,7 @@ add_executable(week8.seq week8/seq.c)
 add_executable(week9.ring week9/ring.c)
 add_executable(week9.semi week9/semi.c)
 add_executable(week9.sol week9/sol.c)
+
+add_executable(week10.ban week10/ban.c)
+add_executable(week10.jump week10/jump.c)
+add_executable(week10.net week10/net.c)
