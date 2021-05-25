@@ -72,7 +72,7 @@ int main() {
     }
     //plansza(t,0,100);
     while (check_end(t) == 0) {
-        int work_done = 0;
+        int entered = 0;
         //plansza(t,0,100);
         if (t[j] > 0 && t[j + 1] > 0) {
             //printf("enter:1\n");
@@ -81,11 +81,11 @@ int main() {
             t[j + 1] -= 1;
             t[j + 2] += 1;
             j += 2;
-            work_done = 1;
+            entered = 1;
         } else if (t[j] == 2 && t[j - 1] > 0) {
             //printf("enter:2\n");
             j -= 1;
-            work_done = 1;
+            entered = 1;
         } else if (t[j] == 2 && t[j + 1] == 0) {
             //printf("enter:3\n");
             //ruch w prawo + lewo
@@ -96,7 +96,7 @@ int main() {
             t[j] -= 1;
             t[j + 1] += 1;
             j += 1;
-            work_done = 1;
+            entered = 1;
         } else if (t[j] == 3) {
             //printf("enter:4\n");
             //rozladuj
@@ -104,7 +104,7 @@ int main() {
             t[j + 2] += t[j] / 3;
             t[j] = t[j] % 3;
             j += 2;
-            work_done = 1;
+            entered = 1;
         }
         int max_left = -1;
         int left = -1;
@@ -116,10 +116,10 @@ int main() {
                 left = i;
             }
         }
-        if (j == max_left && work_done == 0) {
+        if (j == max_left && entered == 0) {
             //printf("enter:5\n");
             break;
-        } else if (work_done == 0) {
+        } else if (entered == 0) {
             //printf("enter:6\n");
             j = left;
         }
