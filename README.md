@@ -1,4 +1,4 @@
-# Imperative Programming Course
+# Imperative Programming course
 
 This repository is a collective of problems and assignments in Imperative Programming Course at AGH UST 2020/21.
 
